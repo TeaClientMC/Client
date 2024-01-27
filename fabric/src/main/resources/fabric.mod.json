@@ -1,0 +1,13 @@
+{
+    "schemaVersion": 1,
+    "id": "teaclient",
+    "version": "${version}",
+    "name": "Tea Client",
+    "depends": {
+        "fabric-language-kotlin": ">=1.10.0",
+        "fabric-loader": ">=0.15.0",
+        "minecraft": "~1.20.1",
+        "java": ">=17",
+        "fabric-api": "*"
+    }
+}

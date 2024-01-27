@@ -1,12 +1,11 @@
 pluginManagement {
     repositories {
-        mavenCentral()
         gradlePluginPortal()
+        maven("https://maven.fabricmc.net/") {
+            name = "Fabric"
+        }
+        mavenCentral()
     }
 }
 
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
-}
-
-rootProject.name = "Client"
+include("fabric")
