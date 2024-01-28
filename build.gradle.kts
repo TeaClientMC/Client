@@ -12,10 +12,3 @@ allprojects {
         mavenCentral()
     }
 }
-
-subprojects {
-    val secrets: File = rootProject.file("secrets.gradle.kts")
-    if (secrets.exists()) {
-        apply(from = secrets)
-    }
-}
