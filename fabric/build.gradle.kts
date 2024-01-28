@@ -23,6 +23,7 @@ dependencies {
     modImplementation(libs.indium)
     modImplementation(libs.iris)
     modImplementation(libs.sodium)
+    modImplementation(libs.sodium.extra)
 }
 
 tasks.processResources {

@@ -23,9 +23,9 @@ fabric-loom = "1.5.7"
 # The memory optimazation mod.
 fabric-ferrite-core = "6.0.1-fabric"
 # Rendering API For Fabric.
-indium = "1.0.27+mc1.20.1"
+indium = "1.0.25+mc1.20.1"
 # The Shader Mod Iris
-iris = "1.6.11+1.20.1"
+iris = "1.6.7+1.20.1"
 # The Kotlin version used by the project.
 kotlin = "1.9.10"
 # The Kotlinx Coroutines version the project depends on.
@@ -35,7 +35,9 @@ log4j = "2.22.1"
 # The Minecraft version used targeted at by the project.
 minecraft = "1.20.1"
 # The sodium mod version  + minecraft version.
-sodium = "mc1.20.1-0.5.3"
+sodium = "mc1.20.1-0.5.2"
+# Adds extras to sodium.
+sodium-extra = "mc1.20.1-0.5.1"
 # The Yarn mappings used by the project.
 yarn = "1.20.1+build.10"
 
@@ -53,6 +55,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 sodium = { module = "maven.modrinth:sodium", version.ref = "sodium"}
+sodium-extra = { module = "maven.modrinth:sodium-extra", version.ref = "sodium-extra"}
 yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
 
 # Bundles of libraries used by the project.
