@@ -1,7 +1,9 @@
 package net.teaclient
 
 import net.fabricmc.api.ModInitializer
-import org.apache.logging.log4j.LogManager
+import net.teaclient.common.diagnostics.Logger
+import net.teaclient.common.discord.DiscordIpcConnection
+import net.teaclient.common.discord.DiscordRichPresence
 
 /**
  * The entrypoint to the Fabric mod. The fully-qualified name of this class
@@ -18,17 +20,6 @@ import org.apache.logging.log4j.LogManager
  */
 class TeaClientFabric : ModInitializer {
     /**
-     * A static instance of a Log4j [org.apache.logging.log4j.Logger] used by the client.
-     *
-     * Constructed by invoking the [org.apache.logging.log4j.LogManager.getLogger] function.
-     *
-     * @author HTGAzureX1212.
-     * @see org.apache.logging.log4j.Logger
-     * @since 0.1.0
-     */
-    val logger = LogManager.getLogger("TeaClient")
-
-    /**
      * The [onInitialize] function, overriding the [net.fabricmc.api.ModInitializer.onInitialize]
      * function, runs the initialization logic for the client mod.
      *
@@ -38,6 +29,13 @@ class TeaClientFabric : ModInitializer {
      * @since 0.1.0
      */
     override fun onInitialize() {
-        logger.info("Hello world from TeaClient")
+        Logger.logger.info("Hello world from TeaClient")
+
+        // TODO: move all of this Discord Rich Presence thing to a toggleable module
+        val connection = DiscordIpcConnection(1201074663988658267UL)
+        connection.connect()
+        Thread.sleep(5000)
+        val presence = DiscordRichPresence(1201074663988658267UL, "TeaClient", "Minecraft 1.20.1")
+        connection.send(presence, 4500)
     }
 }

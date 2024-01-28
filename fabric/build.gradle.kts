@@ -13,6 +13,8 @@ dependencies {
     minecraft(libs.minecraft)
     mappings(libs.yarn)
 
+    implementation(project(":common"))
+
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(libs.fabric.loader)

@@ -43,3 +43,6 @@ bin/
 
 ### Minecraft ###
 **/run
+
+### Secrets ###
+secrets.gradle.kts

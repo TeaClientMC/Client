@@ -1,0 +1,1 @@
+val DISCORD_APPLICATION_ID by extra { /* insert Discord application ID here */ }

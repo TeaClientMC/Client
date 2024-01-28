@@ -8,6 +8,8 @@
 # Version declarations that can be used in the `version.ref` property in the upcoming declaration
 # of libraries, bundles and plugins.
 [versions]
+# The Discord IPC library version the project depends on.
+discord-ipc = "0.2.2"
 # The Fabric API version the project depends on.
 fabric-api = "0.91.0+1.20.1"
 # The Fabric Language Kotlin adapter the project depends on.
@@ -18,6 +20,10 @@ fabric-loader = "0.15.6"
 fabric-loom = "1.5.7"
 # The Kotlin version used by the project.
 kotlin = "1.9.10"
+# The Kotlinx Coroutines version the project depends on.
+kotlinx-coroutines = "1.7.3"
+# The Log4J version the project depends on.
+log4j = "2.22.1"
 # The Minecraft version used targeted at by the project.
 minecraft = "1.20.1"
 # The Yarn mappings used by the project.
@@ -25,9 +31,12 @@ yarn = "1.20.1+build.10"
 
 # Libraries used by the project.
 [libraries]
+discord-ipc = { module = "com.github.caoimhebyrne:KDiscordIPC", version.ref = "discord-ipc" }
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-language-kotlin" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
 
