@@ -5,7 +5,7 @@
     "name": "Tea Client",
     "entrypoints": {
         "main": [
-            "net.teaclient.TeaClient"
+            "net.teaclient.TeaClientFabric"
         ]
     },
     "depends": {
