@@ -19,6 +19,7 @@ dependencies {
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(libs.fabric.loader)
+//    modImplementation(libs.sodium)
 }
 
 tasks.processResources {

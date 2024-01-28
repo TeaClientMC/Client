@@ -28,6 +28,8 @@ kotlinx-coroutines = "1.7.3"
 log4j = "2.22.1"
 # The Minecraft version used targeted at by the project.
 minecraft = "1.20.1"
+# The sodium mod version  + minecraft version.
+sodium = "mc1.20.1-0.5.6"
 # The Yarn mappings used by the project.
 yarn = "1.20.1+build.10"
 
@@ -41,6 +43,7 @@ fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-l
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+sodium = { module = "maven.modrinth:sodium", version.ref = "sodium"}
 yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
 
 # Bundles of libraries used by the project.

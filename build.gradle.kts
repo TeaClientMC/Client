@@ -30,6 +30,7 @@ allprojects {
             footerMessage = "(c) 2024 TeaClient"
             separateInheritedMembers = false
             mergeImplicitExpectActualDeclarations = false
+
         }
     }
 }
