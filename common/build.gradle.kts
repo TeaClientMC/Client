@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin)
+    alias(libs.plugins.dokka)
 }
 
 version = "${properties["net.teaclient.version"]}+${properties["net.teaclient.minecraft"]}-common"

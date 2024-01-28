@@ -10,11 +10,13 @@
 [versions]
 # The Discord IPC library version the project depends on.
 discord-ipc = "0.2.2"
+# The Documentation library for kotlin.
+dokka = "1.9.10"
 # The Fabric API version the project depends on.
 fabric-api = "0.91.0+1.20.1"
 # The Fabric Language Kotlin adapter the project depends on.
 fabric-language-kotlin = "1.10.14+kotlin.1.9.20"
-# The Fabric Loader version the project depends on.
+# The Fabric Loader version the project depends on.+++
 fabric-loader = "0.15.6"
 # The Fabric Loom version used by the project.
 fabric-loom = "1.5.7"
@@ -32,6 +34,7 @@ yarn = "1.20.1+build.10"
 # Libraries used by the project.
 [libraries]
 discord-ipc = { module = "com.github.caoimhebyrne:KDiscordIPC", version.ref = "discord-ipc" }
+dokka-base = {module = "org.jetbrains.dokka:dokka-base", version.ref = "dokka"}
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-language-kotlin" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
@@ -49,3 +52,4 @@ yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
 [plugins]
 fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+dokka = {id = "org.jetbrains.dokka", version.ref = "dokka"}

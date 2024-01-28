@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.fabric.loom)
+    alias(libs.plugins.dokka)
 }
 
 version = "${properties["net.teaclient.version"]}+${properties["net.teaclient.minecraft"]}-fabric"
@@ -25,3 +26,4 @@ tasks.processResources {
         expand(properties)
     }
 }
+
