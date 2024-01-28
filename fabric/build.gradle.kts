@@ -19,7 +19,10 @@ dependencies {
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(libs.fabric.loader)
-//    modImplementation(libs.sodium)
+    modImplementation(libs.fabric.ferritecore)
+    modImplementation(libs.indium)
+    modImplementation(libs.iris)
+    modImplementation(libs.sodium)
 }
 
 tasks.processResources {

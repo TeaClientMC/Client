@@ -16,12 +16,28 @@ plugins {
 
 allprojects {
     group = "net.teaclient"
-
-
     repositories {
         maven("https://jitpack.io") {
             name = "Jitpack"
         }
+        maven("https://www.cursemaven.com") {
+            name = "CurseMaven"
+            content {
+                includeGroup("curse.maven")
+            }
+        }
+
+        exclusiveContent {
+            forRepository {
+                maven("https://api.modrinth.com/maven") {
+                    name = "Modrinth"
+                }
+            }
+            filter {
+                includeGroup("maven.modrinth")
+            }
+        }
+
         mavenCentral()
     }
 
