@@ -1,0 +1,42 @@
+# A version catalog file for declaring versions of various dependencies used in the project.
+#
+# To reference anything in this file, use:
+# - the `libs.plugins.<whatever>` notation to access the version information of a plugin;
+# - the `libs.bundles.<whatever>` notation to access the version information of a bundle of dependcies; and
+# - the `libs.<whatever>` notation to access the version information of a library dependency.
+
+# Version declarations that can be used in the `version.ref` property in the upcoming declaration
+# of libraries, bundles and plugins.
+[versions]
+# The Fabric API version the project depends on.
+fabric-api = "0.91.0+1.20.1"
+# The Fabric Language Kotlin adapter the project depends on.
+fabric-language-kotlin = "1.10.14+kotlin.1.9.20"
+# The Fabric Loader version the project depends on.
+fabric-loader = "0.15.6"
+# The Fabric Loom version used by the project.
+fabric-loom = "1.5.7"
+# The Kotlin version used by the project.
+kotlin = "1.9.10"
+# The Minecraft version used targeted at by the project.
+minecraft = "1.20.1"
+# The Yarn mappings used by the project.
+yarn = "1.20.1+build.10"
+
+# Libraries used by the project.
+[libraries]
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-language-kotlin" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
+
+# Bundles of libraries used by the project.
+#
+# Used to avoid declaring a collection of libraries multiple times across the monorepository.
+[bundles]
+
+# Plugins used by the project.
+[plugins]
+fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
