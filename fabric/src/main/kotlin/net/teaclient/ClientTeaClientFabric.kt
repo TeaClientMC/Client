@@ -33,5 +33,7 @@ class ClientTeaClientFabric : ClientModInitializer {
             configurationPath.mkdir()
 
         val splashPath = Thread.currentThread().contextClassLoader.getResourceAsStream("assets/teaclient/splash.png")
+        val iconPath = Thread.currentThread().contextClassLoader.getResourceAsStream("assets/minecraft/")
+
     }
 }
