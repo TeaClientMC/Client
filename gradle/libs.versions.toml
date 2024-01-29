@@ -22,10 +22,8 @@ fabric-loader = "0.15.6"
 fabric-loom = "1.5.7"
 # The memory optimazation mod.
 fabric-ferrite-core = "6.0.1-fabric"
-# Rendering API For Fabric.
-indium = "1.0.25+mc1.20.1"
 # The Shader Mod Iris
-iris = "1.6.7+1.20.1"
+iris = "1.6.11+1.20.1"
 # The Kotlin version used by the project.
 kotlin = "1.9.10"
 # The Kotlinx Coroutines version the project depends on.
@@ -34,10 +32,12 @@ kotlinx-coroutines = "1.7.3"
 log4j = "2.22.1"
 # The Minecraft version used targeted at by the project.
 minecraft = "1.20.1"
+# Forge Version
+#minecraft-forge = "something"
+# Memory leak fix
+memory-leak-fix = "v1.1.5"
 # The sodium mod version  + minecraft version.
-sodium = "mc1.20.1-0.5.2"
-# Adds extras to sodium.
-sodium-extra = "mc1.20.1-0.5.1"
+sodium = "mc1.20.1-0.5.3"
 # The Yarn mappings used by the project.
 yarn = "1.20.1+build.10"
 
@@ -49,13 +49,12 @@ fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fab
 fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-language-kotlin" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
 fabric-ferritecore = { module = "maven.modrinth:ferrite-core", version.ref = "fabric-ferrite-core"}
-indium = { module = "maven.modrinth:indium", version.ref = "indium"}
 iris = {module = "maven.modrinth:iris", version.ref = "iris"}
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+memory-leak-fix = { module = "maven.modrinth:memoryleakfix", version.ref = "memory-leak-fix"}
 sodium = { module = "maven.modrinth:sodium", version.ref = "sodium"}
-sodium-extra = { module = "maven.modrinth:sodium-extra", version.ref = "sodium-extra"}
 yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
 
 # Bundles of libraries used by the project.

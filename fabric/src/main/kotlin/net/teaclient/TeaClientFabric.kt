@@ -21,7 +21,7 @@ import net.teaclient.common.discord.DiscordRichPresence
 class TeaClientFabric : ModInitializer {
     /**
      * The [onInitialize] function, overriding the [net.fabricmc.api.ModInitializer.onInitialize]
-     * function, runs the initialization logic for the client mod.
+     * function, runs the initialization logic for the mod.
      *
      * @author HTGAzureX1212.
      * @return nothing.

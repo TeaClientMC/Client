@@ -4,6 +4,9 @@
     "version": "${version}",
     "name": "Tea Client",
     "entrypoints": {
+        "client": [
+            "net.teaclient.ClientTeaClientFabric"
+        ],
         "main": [
             "net.teaclient.TeaClientFabric"
         ]
