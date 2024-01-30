@@ -34,6 +34,8 @@ class ClientTeaClientFabric : ClientModInitializer {
 
         val splashPath = Thread.currentThread().contextClassLoader.getResourceAsStream("assets/teaclient/splash.png")
         val iconPath = Thread.currentThread().contextClassLoader.getResourceAsStream("assets/minecraft/splashLogo.png")
+        val ProgressBackground = Thread.currentThread().contextClassLoader.getResourceAsStream("assets/teaclient/progress_background.png")
+        val ProgressRender = Thread.currentThread().contextClassLoader.getResourceAsStream("assets/teaclient/progress_bar.png")
 
     }
 }
