@@ -19,9 +19,9 @@ dependencies {
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(libs.fabric.loader)
-    modImplementation(libs.fabric.ferritecore)
+    modLocalRuntime(libs.fabric.ferritecore)
     modImplementation(libs.iris)
-    modImplementation(libs.memory.leak.fix)
+    modLocalRuntime(libs.memory.leak.fix)
     modImplementation(libs.sodium)
 }
 
