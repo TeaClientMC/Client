@@ -1,4 +1,4 @@
 package net.teaclient.common.mixins
 
-class TeaClientTitle {
+class TitleScreen {
 }
