@@ -9,7 +9,7 @@
 # of libraries, bundles and plugins.
 [versions]
 # Logging in in developer mode.
-devlogin = "3.4.1"
+devlogin = "3.5"
 # The Discord IPC library version the project depends on.
 discord-ipc = "0.2.2"
 # The Documentation library for kotlin.
@@ -45,7 +45,7 @@ yarn = "1.20.1+build.10"
 
 # Libraries used by the project.
 [libraries]
-devlogger = { module = "com.ptsmods:devlogin", version.ref = "devlogin"}
+devlogin= { module = "com.ptsmods:devlogin", version.ref = "devlogin"}
 discord-ipc = { module = "com.github.caoimhebyrne:KDiscordIPC", version.ref = "discord-ipc" }
 dokka-base = {module = "org.jetbrains.dokka:dokka-base", version.ref = "dokka"}
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
