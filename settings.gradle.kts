@@ -7,6 +7,9 @@ pluginManagement {
         maven("https://maven.minecraftforge.net/") {
             name = "MinecraftForge"
         }
+        maven("https://maven.pkg.github.com/PlanetTeamSpeakk/DevLogin") {
+            name = "DevLogin"
+        }
         mavenCentral()
     }
 }
