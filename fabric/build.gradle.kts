@@ -16,7 +16,7 @@ dependencies {
 
     implementation(project(":common"))
 
-    modImplementation(libs.devlogger)
+    modImplementation(libs.devlogin)
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(libs.fabric.loader)
