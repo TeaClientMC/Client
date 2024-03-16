@@ -29,7 +29,7 @@ class TeaClientFabric : ModInitializer {
      * @since 0.1.0
      */
     override fun onInitialize() {
-        Logger.logger.info("Hello world from TeaClient")
+        Logger.logger.info("Loaded!")
 
         // TODO: move all of this Discord Rich Presence thing to a toggleable module
         val connection = DiscordIpcConnection(1201074663988658267UL)
